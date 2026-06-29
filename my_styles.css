@@ -1,0 +1,105 @@
+:root {
+    --good_color: rgb(39, 68, 231);
+    --highlight_color: rgb(186, 23, 99);
+    --visited_color: rgb(96, 96, 96);
+    --link_color: rgb(0, 30, 255);
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: darkgreen;
+
+}
+
+#resume {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "side_info name"
+        "links links"
+        "initial_content initial_content"
+        "secondary_content secondary_content"
+        "ending_lines ending_lines";
+}
+
+#cover_letter {
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "side_info name"
+        "links links"
+        "initial_content initial_content"
+        "secondary_content secondary_content"
+        "lines ending_lines";
+}
+
+#career_goals {
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "side_info name"
+        "links links"
+        "initial_content initial_content"
+        "secondary_content secondary_content"
+        "ending_lines ending_lines";
+}
+
+#links {
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline rgb(249, 249, 47);
+    font-style: italic;
+}
+
+#disclaimer {
+    font-size: xx-small;
+}
+
+.name {
+    grid-area: name;
+}
+
+.side_info {
+    grid-area: side_info;
+}
+
+.initial_content {
+    grid-area: initial_content;
+}
+
+.secondary_content {
+    grid-area: secondary_content;
+}
+
+#ending_lines {
+    grid-area: ending_lines;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: rgb(50, 43, 43);
+}
+
+h2 {
+    font-family: cursive;
+    text-decoration: wavy;
+    font-style: oblique;
+}
+
+h3 {
+    font-family: fantasy;
+    text-decoration: wavy;
+    font-style: oblique;
+}
+
+a:hover {
+    color: var(--highlight_color);
+}
+
+a:visited {
+    color: var(--visited_color);
+}
+
+a:link {
+    color: var(--link_color);
+}
