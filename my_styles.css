@@ -17,6 +17,15 @@ body {
 img {
     max-width: 20vw;
 }
+audio {
+    max-width: 40 vw;
+    margin: 10px 10px;
+
+}
+video {
+    max-width: 40 vw;
+    margin: 10px 10px;
+}
 #img_and_name {
     display:flex;
     align-items: center;
@@ -35,7 +44,6 @@ img {
 #links {
     font-size: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-decoration: underline rgb(249, 249, 47);
     font-style: italic;
 }
 body > h1 {

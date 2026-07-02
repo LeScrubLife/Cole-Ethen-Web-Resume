@@ -26,10 +26,10 @@
     </p>
     <p>Links to other pages:
         <a target="_blank" href="Cole_Ethen_Cover_Letter.html">My Cover Letter</a> &nbsp;
-        <a target="_blank" href="Cole_Ethen_Career_Goals">My Career Goals</a>
+        <a target="_blank" href="Cole_Ethen_Career_Goals.html">My Career Goals</a>
     </p>
 
-    <section>
+    <section id="education">
         <h2>My Education Consists of</h2>
         <ul>
             <li><strong>Joe Schmoe High School</strong> - Until 2017
@@ -48,7 +48,7 @@
             </li>
         </ul>
     </section>
-    <article>
+    <article id="work_exp">
         <ol>
             <li><strong>Old Glue Factory</strong> - 2000-2015
                 <ul>
@@ -72,7 +72,7 @@
                 </ul>
             </li>
         </ol>
-        <table>
+        <table id="work_comparison">
             <caption>Work Experience Comparisons</caption>
             <tr>
                 <th>Work</th>
@@ -100,12 +100,13 @@
             </tr>
         </table>
     </article>
-    <footer>
+    <footer id="ending_lines">
         <script>
             let date = new Date();
-            document.body.innerHTML += "<p>Today's date: " + date.toDateString() + "</p>";
+            document.getElementById("date").textContent = "<p>Today's date: " + date.toDateString() + "</p>";
             console.log("Here is the resume page fully loaded for you");
         </script>
+        <div id = "date"></div>
     </footer>
 </body>
 </html>
