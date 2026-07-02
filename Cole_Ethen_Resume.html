@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1">
@@ -9,15 +8,21 @@
 </head>
 
 <body id="resume">
-    <img src="professional_photo.jpg" alt="Look at that handsome lad"
-    sizes="(min-width: 200px) 20vw, (min-width: 500px) 30vw, (min-width: 1000px) 40vw">
-    <h1>Cole Ethen</h1>
-    <p>1(111)-100-0011 | theyarecoming@aliens.org | Glibadome, Mars</p>
-    <p>Links on this page:
-        <a href="#education">Education</a> &nbsp;
-        <a href="#work_exp">Work Experience</a> &nbsp;
-        <a href="#work_comparison">Comparison Table</a> &nbsp;
-        <a href="#ending_lines">You just want it to end</a>
+    <div id="img_and_name">
+        <div id="image_hold">
+            <img src="professional_photo.jpg" alt="Look at that handsome lad"
+            sizes="(min-width: 200px) 20vw, (min-width: 500px) 30vw, (min-width: 1000px) 40vw">
+        </div>
+        <div id ="name_hold">
+            <h1>Cole Ethen</h1>
+            <p>1(111)-100-0011 | findingwork@resumes.org | Frankfurt, NJ</p>
+        </div>
+    </div>
+        <p>Links on this page:
+        <a href="#education"><em>Education</em></a> &nbsp;
+        <a href="#work_exp"><em>Work Experience</em></a> &nbsp;
+        <a href="#work_comparison"><em>Comparison Table</em></a> &nbsp;
+        <a href="#ending_lines"><em>You just want it to end</em></a>
     </p>
     <p>Links to other pages:
         <a target="_blank" href="Cole_Ethen_Cover_Letter.html">My Cover Letter</a> &nbsp;
@@ -27,29 +32,29 @@
     <section>
         <h2>My Education Consists of</h2>
         <ul>
-            <li>Pacelli Catholic High School - Until 2017
+            <li><strong>Joe Schmoe High School</strong> - Until 2017
                 <ul>
                     <li>I obtained mediocre knowledge</li>
                     <li>I participated in many things</li>
                     <li>I sought many academic achievements</li>
                 </ul>
             </li>
-            <li>South Dakota State University - Until 2021
+            <li><strong>Middle Dakota State University</strong> - Until 2021
                 <ul>
                     <li>Joined the chior</li>
                     <li>Participated in plays</li>
-                    <li>Obtained a Bachelors in Mechanical Engineering</li>
+                    <li>Worked part time at a restaurant</li>
                 </ul>
             </li>
         </ul>
     </section>
-    <section>
+    <article>
         <ol>
             <li><strong>Old Glue Factory</strong> - 2000-2015
                 <ul>
                     <li>Successfully turned 30,000 horse hooves into glue</li>
-                    <li>Did not receive a single citation for huffing glue</li>
-                    <li>Frequently discouraged glue huffing among my peers</li>
+                    <li>Spotted and helped fix 6 glue safety making issues</li>
+                    <li>Frequently reported glue huffing among my peers</li>
                 </ul>
             </li>
             <li><strong>The Admirable Old Geezer Shack</strong> - 2015-2021
@@ -68,6 +73,7 @@
             </li>
         </ol>
         <table>
+            <caption>Work Experience Comparisons</caption>
             <tr>
                 <th>Work</th>
                 <th>Good</th>
@@ -78,25 +84,28 @@
                 <td>Old Glue Factory</td>
                 <td>It always smelled really nice</td>
                 <td>It was always extremely warm</td>
-                <td>I could have utilized the horse hooves better</td>
+                <td>I could have improved my glue making speed</td>
             </tr>
             <tr>
                 <td>The Admirable Old Geezer Shack</td>
                 <td>They taught me so many fabulous recipes</td>
                 <td>They forgot my name a lot</td>
-                <td>I should have walked them through solving their technology problems</td>
+                <td>I didn't teach them how to solve their problems well enough</td>
             </tr>
             <tr>
                 <td>Hammer and Sons</td>
                 <td>The hammers were very high quality</td>
-                <td>They hit us so often we nicknamed the place Hammer your Sons</td>
-                <td>I could have dodged more of the hammers</td>
+                <td>The hammer noises were always very loud</td>
+                <td>Many of the systems could have been automated</td>
             </tr>
         </table>
-    </section>
-    <section>
-        <p>HELP I'M NOT FINISHED!</p>
-    </section>
+    </article>
+    <footer>
+        <script>
+            let date = new Date();
+            document.body.innerHTML += "<p>Today's date: " + date.toDateString() + "</p>";
+            console.log("Here is the resume page fully loaded for you");
+        </script>
+    </footer>
 </body>
-
 </html>

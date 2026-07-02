@@ -4,73 +4,77 @@
     --visited_color: rgb(96, 96, 96);
     --link_color: rgb(0, 30, 255);
 }
-
 body {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: 20vw;
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(205, 232, 255);
-    padding: 10px 5px;
+    padding: 10px 10px;
     margin: 10px;
     color: var(--text_color);
     border-radius: 5px;
     border-color: rgb(215, 85, 30);
     border-style: ridge;
 }
-
+img {
+    max-width: 20vw;
+}
+#img_and_name {
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#image_hold {
+    flex: 0 1 auto;
+}
+#name_hold {
+    flex: 0 1 auto;
+    text-align: left;
+}
 #resume {
     background-color: rgb(249, 215, 171);
 }
-
 #links {
     font-size: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: underline rgb(249, 249, 47);
     font-style: italic;
 }
-
 body > h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 24px;
     color: rgb(50, 43, 43);
 }
-
-h1::first-letter {
+h2::first-letter, h3::first-letter {
     font-family: sans-serif;
     font-style: italic;
 }
-
 h2 > p{
     font-family: cursive;
     text-decoration: wavy;
     font-style: oblique;
 }
-
 h3,h4,h5,h6{
     font-family: fantasy;
     text-decoration: wavy;
     font-style: oblique;
 }
-
 body > img {
     flex: 0 1 50%;
 }
-
 body > p {
     flex: 0 1 50%;
 }
-
-a:hover {
-    color: var(--highlight_color);
+table {
+    border: .5px solid rgb(56, 101, 0);
 }
-
+th,td {
+    border:1.5px groove rgb(0, 101, 98);
+}
+a:hover {
+    background-color:rgb(186, 23, 99)
+}
 a:visited {
     color: var(--visited_color);
 }
-
 a:link {
     color: var(--link_color);
 }
