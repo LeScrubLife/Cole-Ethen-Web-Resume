@@ -7,26 +7,66 @@
     <link rel="stylesheet" href="my_styles.css">
   </head>
 
-  <body>
+  <body id="career_goals">
     <section>
-      <p>Links on this page:
-        <a href="#goals_vid">Goals</a> &nbsp;
-        <a href="#goals_image">Goals visuals</a> &nbsp;
-        <a href="#ending_lines">You just want it to end</a>
-      </p>
-      <p>Links to other pages:
-        <a target="_blank" href="Cole_Ethen_Resume.html">My Resume</a> &nbsp;
-        <a target="_blank" href="Cole_Ethen_Cover_Letter.html">My Cover Letter</a>
-      </p>
+      <nav>
+        <p>Links on this page:
+          <a href="#goals_image">Goals visuals</a> &nbsp;
+          <a href="#info_form">I would like valuable information about your visit</a>
+        </p>
+        <p>Links to other pages:
+          <a target="_blank" href="Cole_Ethen_Resume.html">My Resume</a> &nbsp;
+          <a target="_blank" href="Cole_Ethen_Cover_Letter.html">My Cover Letter</a>
+        </p>
+      </nav>
     </section>
-    <audio autoplay controls loop>
-      <source src="audio_points.mp3">
-      Audio not supported
-    </audio>
-    <video autoplay controls>
-      <source src="video_points.mp4">
-      Video not supported
-    </video>
+    <hr>
+    <main>
+      <section id="goals_image">
+        <img src="professional_photo.jpg" alt="Look at that ol' lad again">
+        <audio autoplay controls loop>
+          <source src="audio_points.mp3">
+          Audio not supported
+        </audio>
+      </section>
+      <hr>
+      <video autoplay controls>
+        <source src="video_points.mp4">
+        Video not supported
+      </video>
+    </main>
+    <footer>
+      <fieldset id="info_form">
+        <legend>Information I would like to obtain from you</legend>
+        <form action = "https://wp.zybooks.com/form-viewer.php" method = "post">
+          <label for="first_name">First name:</label>
+          <input type="text" id="first_name" name="first_name"><br>
+          <label for="last_name">Last name:</label>
+          <input type="text" id="last_name" name="last_name"><br>
+          <label for="company_name">And your company?</label>
+          <input type="text" id="company_name" name="company_name"><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br>
+          <label for="phone_num">Your phone number:</label>
+          <input type="tel" id="phone_num" name="phone_num"><br>
+          <label for="message">Any messages for me:</label>
+          <textarea id="message" name="message" rows="1" cols="50"></textarea><br>
+          <p>What time do you like to receive feedback?</p>
+          <input type="radio" id="contact_time" name="contact_time" value="a.m.">
+          <label for="contact_time">In the A of M</label><br>
+          <input type="radio" id="contact_time" name="contact_time" value="p.m.">
+          <label for="contact_time">In the P of M</label><br>
+          <input type="radio" id ="contact_time" name="contact_time" value="anytime">
+          <label for="contact_time">Any of the time</label><br>
+          <p>How do you like to receive feedback?</p>
+          <select id = "contact_method" name="contact_method">
+            <option value="phone">Via a fascinating direct phone call</option>
+            <option value="email">Via personal email</option>
+            <option value="text">Via unfun text message</option>
+          </select><br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </fieldset>
+    </footer>
   </body>
-
 </html>

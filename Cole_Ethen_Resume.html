@@ -10,25 +10,25 @@
 <body id="resume">
     <div id="img_and_name">
         <div id="image_hold">
-            <img src="professional_photo.jpg" alt="Look at that handsome lad"
-            sizes="(min-width: 200px) 20vw, (min-width: 500px) 30vw, (min-width: 1000px) 40vw">
+            <img src="professional_photo.jpg" alt="Look at that ol' lad">
         </div>
         <div id ="name_hold">
             <h1>Cole Ethen</h1>
-            <p>1(111)-100-0011 | findingwork@resumes.org | Frankfurt, NJ</p>
+            <p>1(111)-100-0011 | findingwork@resumes.org | Frankfurt, NJ</p><br>
         </div>
     </div>
-        <p>Links on this page:
+    <hr>
+    <span>Links on this page:
         <a href="#education"><em>Education</em></a> &nbsp;
         <a href="#work_exp"><em>Work Experience</em></a> &nbsp;
         <a href="#work_comparison"><em>Comparison Table</em></a> &nbsp;
         <a href="#ending_lines"><em>You just want it to end</em></a>
-    </p>
+    </span>
     <p>Links to other pages:
         <a target="_blank" href="Cole_Ethen_Cover_Letter.html">My Cover Letter</a> &nbsp;
         <a target="_blank" href="Cole_Ethen_Career_Goals.html">My Career Goals</a>
     </p>
-
+<hr>
     <section id="education">
         <h2>My Education Consists of</h2>
         <ul>
@@ -48,16 +48,17 @@
             </li>
         </ul>
     </section>
+    <hr>
     <article id="work_exp">
         <ol>
-            <li><strong>Old Glue Factory</strong> - 2000-2015
+            <li><h4>Old Glue Factory</h4> - 2000-2015
                 <ul>
                     <li>Successfully turned 30,000 horse hooves into glue</li>
                     <li>Spotted and helped fix 6 glue safety making issues</li>
                     <li>Frequently reported glue huffing among my peers</li>
                 </ul>
             </li>
-            <li><strong>The Admirable Old Geezer Shack</strong> - 2015-2021
+            <li><h4>The Admirable Old Geezer Shack</h4> - 2015-2021
                 <ul>
                     <li>Prepared many meals to feed the elderly</li>
                     <li>Regularly participated in conversation with the elderly</li>
@@ -72,6 +73,7 @@
                 </ul>
             </li>
         </ol>
+        <hr>
         <table id="work_comparison">
             <caption>Work Experience Comparisons</caption>
             <tr>
@@ -100,10 +102,11 @@
             </tr>
         </table>
     </article>
+    <hr>
     <footer id="ending_lines">
         <script>
             let date = new Date();
-            document.getElementById("date").textContent = "<p>Today's date: " + date.toDateString() + "</p>";
+            document.getElementById("date").textContent = "<h1>Today's date: " + date.toDateString() + "</h1>";
             console.log("Here is the resume page fully loaded for you");
         </script>
         <div id = "date"></div>
