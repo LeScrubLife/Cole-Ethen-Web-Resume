@@ -4,14 +4,16 @@
     --visited_color: rgb(96, 96, 96);
     --link_color: rgb(0, 30, 255);
 }
+* {
+    padding: 10px 10px;
+    margin: 10px;
+}
 *::first-letter {
     color:rgb(161, 201, 0)
 }
 body {
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(205, 232, 255);
-    padding: 10px 10px;
-    margin: 10px;
     color: var(--text_color);
     border-radius: 5px;
     border-color: rgb(215, 85, 30);
@@ -54,7 +56,6 @@ img {
 audio {
     max-width: 40 vw;
     margin: 10px 10px;
-
 }
 video {
     width: 40vw;
@@ -89,6 +90,11 @@ ul {
 }
 #links {
     font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+.helping_links {
+    font-size: 14px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
 }
