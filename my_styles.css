@@ -8,9 +8,6 @@
     padding: 10px 10px;
     margin: 10px;
 }
-*::first-letter {
-    color:rgb(161, 201, 0)
-}
 body {
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(205, 232, 255);
